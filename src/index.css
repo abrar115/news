@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.header {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  margin-right: 6px;
+  font-size: 1.5rem;
+}
+.logo > img {
+  width: 80px;
+}
+li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid orange !important;
+}
+
+/* homepage */
+.homepage {
+  background-image: url("./assets/pexels-rachel-claire-4857757.jpg");
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 220px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+.homepage h1,
+p {
+  font-size: 2rem;
+}
+.p1::first-letter {
+  font-size: 3rem;
+  opacity: 0.9;
+}
+/* cards news */
+.cards {
+  width: 90%;
+  margin: auto;
+}
+.cards_news {
+  width: 270px;
+  margin-top: 10px;
+  box-shadow: 1px 6px 25px rgb(38, 36, 36);
+}
+.news_image {
+  width: 100%;
+  border-radius: 5px;
+}
+.cards_news > p {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+/* footer */
+.footer {
+  background-color: #fe0000;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.CallToAction > ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer__paragraph {
+  font-size: 19px;
+  width: 300px;
+}
+.card-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+/* media query for controlling the screen in all devices */
+@media screen and (max-width: 678px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards_news {
+    width: 314px;
+    margin: auto;
+  }
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+  .header__navbar > li {
+    font-size: 1.1rem;
+  }
+  .homepage {
+    width: 100%;
+    margin: auto;
+    background-image: url("./assets/pexels-rachel-claire-4857757.jpg");
+    text-align: center;
+    padding: 220px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+  }
+}
