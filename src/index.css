@@ -1,4 +1,4 @@
-body {
+node --versionnode --versionbody {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -125,3 +125,45 @@ p {
     font-weight: bold;
   }
 }
+.open__menu{
+  font-size: 50px;
+  margin-right: 10px;
+}
+/* loading component class */
+.loading{
+ display:Flex;
+ align-items:center;
+ justify-content: center;
+ width:100vw;
+ height:100vh;
+ font-size:12px;
+}
+
+@media screen and ( max-width:600px){
+  .header__navbar {
+    display: none;
+  }
+  .mobile__navigation{
+    display:flex;
+    flex-direction: column;
+    background-color: #fc0000;
+    color:white;
+    margin:auto;
+    width:100%;
+  }
+  .header{
+    width:100%;
+  }
+  
+  
+}
+
+@media screen and ( min-width:700px){
+  .mobile__view{
+    display:none;
+  }
+  
+  
+}
+
+
